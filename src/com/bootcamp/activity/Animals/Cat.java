@@ -1,7 +1,28 @@
-package com.bootcamp.activity;
+package com.bootcamp.activity.Animals;
 
-/**
- * Created by konstantin.pletenev on 7/31/17.
- */
-public class Cat {
+public class Cat extends Animal {
+	String color;
+
+	public Cat(String colorOfEyes, int noOfLegs, String color) {
+		super(colorOfEyes, noOfLegs);
+		this.color = color;
+	}
+
+	@Override
+	public void run() {
+		System.out.println("This is a cat running");
+	}
+
+	@Override
+	public void sleep() {
+		System.out.println("This is a cat sleep all day long");
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public String getColor() {
+		return color;
+	}
 }
