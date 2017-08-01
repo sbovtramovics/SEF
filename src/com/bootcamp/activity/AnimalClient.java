@@ -16,6 +16,9 @@ public class AnimalClient {
 
 		list.add(new Cat("Black", 4, "Brown"));
 		list.add(new Cat("Green", 4, "White"));
+		
+		//add to the git
+		list.add(new Cat("Pink", 2, "White"));
 
 		int catCount = 0;
 		int dogCount = 0;
